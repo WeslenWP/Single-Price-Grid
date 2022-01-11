@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 50px auto;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container .item1 {
+  background-color: white;
+  width: 100%;
+  flex-grow: 1;
+  border-radius: 8px 8px 0 0;
+  box-sizing: border-box;
+  padding: 20px 35px;
+  display: block;
+  color: hsl(218, 22%, 67%);
+  align-items: center;
+}
+
+.container .item1 h1 {
+  display: block;
+  color: hsl(179, 48%, 55%);
+}
+
+.container .item1 h2 {
+  display: block;
+  color: hsl(71, 73%, 54%);
+}
+
+.container .item1 p {
+  line-height: 1.5;
+}
+
+.container .item2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.container .item2 .subitem1 {
+  display: block;
+  border-radius: 0 0 0 8px;
+  background-color: hsl(179, 62%, 43%);
+  flex-basis: 50%;
+  color: hsl(0, 0%, 100%);
+  padding: 15px 35px;
+}
+
+.container .item2 .subitem1 h4 {
+  font-size: xx-large;
+  margin: 0;
+}
+.container .item2 .subitem1 h4 span {
+  font-weight: 400;
+  color: hsl(208, 21%, 88%);
+  font-size: medium;
+  vertical-align: middle;
+}
+
+.container .item2 .subitem1 p {
+  margin: 0;
+  margin-top: 0.5em;
+  color: hsl(208, 21%, 88%);
+}
+
+.container .item2 .subitem1 .btn {
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: hsl(71, 73%, 54%);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 1.8em 0;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container .subitem2 {
+  display: block;
+  padding: 15px 35px;
+  border-radius: 0 0 8px 0;
+  background-color: hsl(179, 56%, 49%);
+  flex-basis: 50%;
+  color: hsl(208, 21%, 88%);
+}
+
+.container .subitem2 h3 {
+  color: white;
+}
+
+.container .subitem2 ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+}
+.container .subitem2 li {
+  list-style: none;
+}
+
+@media only screen and (max-width: 1250px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .container {
+    width: 80%;
+  }
+  .container .item2 {
+    display: block;
+  }
+  .container .item2 .subitem1 {
+    border-radius: 0;
+  }
+  .container .item2 .subitem2 {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
